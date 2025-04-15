@@ -1,0 +1,95 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container{
+ height: 100vh;
+ display: grid;
+ grid-template-areas: "h h" 
+ "a m" 
+ "f f";
+ grid-template-columns: 200px 1fr;
+ grid-template-rows: auto 1fr  auto;
+}
+
+
+
+header{
+    grid-area:h;
+    color: black;
+    background-color: gold;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+header ul{
+    list-style: none;
+    display: flex;
+}
+
+header li{
+    margin-right:10px ;
+    font-weight: bold;
+
+}
+
+aside {
+    grid-area: a;
+    background-color: brown;
+    padding: 15px;
+}
+
+aside h2{
+    margin-bottom: 20px;
+
+}
+
+aside li{
+list-style: none;
+font-weight: bold;
+
+}
+
+main{
+    grid-area: m;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+#grid div{
+    background-color: brown;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px;
+    
+}
+
+#grid div:hover{
+    transition: 1s;
+ background-color: black;
+ color: white;
+}
+
+#grid{
+    display: grid;
+
+
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 10px;
+}
+
+footer {
+    grid-area: f;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    height: 100px;
+}
